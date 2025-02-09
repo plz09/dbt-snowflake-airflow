@@ -9,13 +9,18 @@ https://github.com/jacob-mennell/snowflakeAirflowDBT
 
 ## Passo a passo contido neste repo:
 Passo 1: Criar a conta no Snowflake 
+
 Passo 2: Instalar o Docker
+
 Passo 3: Conectar o dbt no Snowflake
+
 Passo 4: Ingerir arquivo CSV no Snowflake com o dbt
+
 Passo 5: Crie a imagem do dbt em um container
+
 Passo 6: Orquestrar o container do dbt conectado ao Snowflake com o Airflow
 
-Siga as instruções abaixo para conseguir realizar todos os passos.
+## Siga as instruções abaixo para conseguir realizar todos os passos
 
 
 ## Arquitetura

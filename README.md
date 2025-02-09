@@ -70,7 +70,7 @@ Entre na pasta ```scripts``` e use o arquivo ```snowflake-setup.sql``` como base
 ### Como utilizar o projeto?
 Faça clone com o comando:
 ```
-git clone www.github.com/wlcamargo/dbt-snowflake-airflow.git
+git clone https://github.com/wlcamargo/dbt-snowflake-airflow.git
 ```
 Entre na pasta do projeto
 ```

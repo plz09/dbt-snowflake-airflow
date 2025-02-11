@@ -7,6 +7,10 @@ Vale ressaltar que esse repo foi criado usando como base o repo abaixo:
 https://github.com/jacob-mennell/snowflakeAirflowDBT
 ```
 
+## Vídeo tutorial
+
+Link: https://youtu.be/mBrk5hvqc84
+
 ## Passo a passo contido neste repo:
 Passo 1: Criar a conta no Snowflake 
 

@@ -1,2 +1,2 @@
-dbt
-dbt-snowflake
+dbt-core==1.9.2
+dbt-snowflake==1.9.1

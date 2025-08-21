@@ -159,3 +159,7 @@ cython_debug/
 #.idea/
 src/dbt/profiles.yml
 airflow/logs/
+
+.env
+.env.*
+!example.env

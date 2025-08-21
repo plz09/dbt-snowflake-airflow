@@ -174,12 +174,15 @@ Resultado esperado:
 ## Como criar a imagem Docker do dbt?
 ```
 cd src
-docker build -t dbt-snowflake .
+docker build -t dbt-snowflake:1.9 .
 ```
 
 ## Como entrar no container do dbt?
 ```
-docker run -it dbt-snowflake /bin/bash
+docker run --rm -it --env-file ../.env \
+  -e DBT_PROFILES_DIR=/app/dbt \
+  -v "$PWD/dbt:/app/dbt" \
+  dbt-snowflake:1.9 dbt run
 ```
 
 ## Como orquestrar a dag do Airflow?

@@ -179,10 +179,13 @@ docker build -t dbt-snowflake:1.9 .
 
 ## Como entrar no container do dbt?
 ```
-docker run --rm -it --env-file ../.env \
-  -e DBT_PROFILES_DIR=/app/dbt \
-  -v "$PWD/dbt:/app/dbt" \
-  dbt-snowflake:1.9 dbt run
+MSYS_NO_PATHCONV=1 MSYS2_ARG_CONV_EXCL="*" \
+docker run -it \
+  --name dbt-snowflake \
+  --env-file ../.env \
+  -e DBT_PROFILES_DIR=/app \
+  -v "$(pwd -W)/dbt:/app" \
+  dbt-snowflake:1.9 bash
 ```
 
 ## Como orquestrar a dag do Airflow?

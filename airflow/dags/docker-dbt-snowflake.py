@@ -3,7 +3,7 @@ from airflow import DAG
 from airflow.providers.docker.operators.docker import DockerOperator
 
 default_args = {
-    "owner": "Wallace Camargo",
+    "owner": "plz",
     "depends_on_past": False,
 }
 
@@ -18,7 +18,7 @@ with DAG(
 
     run_transformn = DockerOperator(
         task_id="run_transformn",
-        image="dbt-snowflake", 
+        image="dbt-snowflake:1.9", 
         container_name="transform",
         api_version="auto",
         auto_remove=True,
